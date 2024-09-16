@@ -1,0 +1,79 @@
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\scretecalculator.exe.config
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\scretecalculator.exe
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\scretecalculator.pdb
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.Calculator.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.exe
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.pdb
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\AngouriMath.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\Antlr4.Runtime.Standard.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\GenericTensor.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\HonkSharp.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\IndexRange.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\Numbers.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Buffers.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Memory.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.ValueTuple.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\AngouriMath.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\Antlr4.Runtime.Standard.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\GenericTensor.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\HonkSharp.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\Numbers.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\System.ValueTuple.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\screteca.B5FE5393.Up2Date
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.imagelocker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.locker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.unlocker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.showimage.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\scretecalculator.exe.manifest
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\bin\Debug\scretecalculator.application
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.exe.manifest
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator\scretecalculator\obj\Debug\scretecalculator.application
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\scretecalculator.exe.config
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\scretecalculator.exe.manifest
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\scretecalculator.application
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\scretecalculator.exe
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\scretecalculator.pdb
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\AngouriMath.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\Antlr4.Runtime.Standard.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\GenericTensor.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\HonkSharp.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\IndexRange.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\Numbers.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Buffers.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Memory.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.ValueTuple.dll
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\AngouriMath.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\Antlr4.Runtime.Standard.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\GenericTensor.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\HonkSharp.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\Numbers.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Buffers.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Memory.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\bin\Debug\System.ValueTuple.xml
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.csproj.AssemblyReference.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.Calculator.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.imagelocker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.locker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.Properties.Resources.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.unlocker.resources
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.csproj.GenerateResource.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.exe.manifest
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.application
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\screteca.B5FE5393.Up2Date
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.exe
+C:\Users\LENOVO\Desktop\program\cSharp\scretecalculator - Copy\scretecalculator\obj\Debug\scretecalculator.pdb

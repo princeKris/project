@@ -1,0 +1,67 @@
+﻿@model IEnumerable<MANmanager.characterdata>
+
+@{ 
+    ViewBag.Title = "List-Character";
+}
+<h2>Tablelist-Character</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.plot)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.typeid)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.pic)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.plot)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.typeid)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+            @Html.ActionLink("Details", "Detial", new { id = item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+        </td>
+    </tr>
+}
+
+</table>

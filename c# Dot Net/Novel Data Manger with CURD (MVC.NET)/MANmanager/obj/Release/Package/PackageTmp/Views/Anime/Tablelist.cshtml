@@ -1,0 +1,127 @@
+﻿@model IEnumerable<MANmanager.animedata>
+@{
+    ViewBag.Title = "List-Anime";
+}
+<h2>Tablelist-Anime</h2>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.novelid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.manhwaid)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ustatus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.uep)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.pic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.genre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.studio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.releasedate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.weblink)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.desc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.aname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rating)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.urating)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.novelid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.manhwaid)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ustatus)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.uep)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.pic)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.genre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.studio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.releasedate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.weblink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.desc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.aname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.rating)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.urating)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Detial", new { id = item.Id }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>

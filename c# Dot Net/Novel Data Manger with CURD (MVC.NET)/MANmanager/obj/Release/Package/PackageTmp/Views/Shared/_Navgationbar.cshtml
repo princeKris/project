@@ -1,0 +1,42 @@
+﻿<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/Novel/Index">MANManager</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+
+                        <a class="nav-link active" href="/Novel/Index">
+                            Novels
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Manhwa/Index" class="nav-link">Manhwa</a>
+                       
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Anime/Index" class="nav-link">Anime</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Character/Index" class="nav-link">Character</a>
+                    </li>
+                    <li class="nav-item dropdowns">
+                        <a class="nav-link dropdown-toggle" role="button">TableList</a>
+                        <div class="dropdown-menu dropdown-content ">
+                            @Html.ActionLink("Novel", "Tablelist", "Novel", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Manhwa", "Tablelist", "Manhwa", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Anime", "Tablelist", "Anime", new { area = "" }, new { @class = "dropdown-item" })
+                            @Html.ActionLink("Character", "Tablelist", "Character", new { area = "" }, new { @class = "dropdown-item" })
+                        </div>
+                    </li>
+                </ul>
+                <form action="search" class="d-flex">
+                    <input class="form-control me-sm-2" type="search" name="q" placeholder="Search" required>
+                    <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+    </div>
+</nav>

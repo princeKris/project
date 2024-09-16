@@ -1,0 +1,101 @@
+﻿@model MANmanager.manhwadata
+
+@{
+    ViewBag.Title = "Create-Manhwa";
+}
+
+<form action="/Manhwa/Create" method="post" enctype="multipart/form-data">
+    @Html.AntiForgeryToken()
+    <fieldset>
+        <legend>Create</legend>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div>
+            @Html.LabelFor(model => model.novelid, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.novelid, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter The Number Of Chapter" } })
+            @Html.ValidationMessageFor(model => model.novelid, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.name, htmlAttributes: new { @class = "form-label mt-4" })
+            @Html.EditorFor(model => model.name, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter The Anime Name" } })
+            @Html.ValidationMessageFor(model => model.name, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.status, htmlAttributes: new { @class = "form-label mt-4" })
+            <select id="status" name="status" class="form-select">
+                <option value="ongoing">ONGOING</option>
+                <option value="upcoming" selected>UPCOMING</option>
+                <option value="dropped">DROPPED</option>
+            </select>
+            @Html.ValidationMessageFor(model => model.status, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.ustatus, htmlAttributes: new { @class = "form-label mt-4" })
+            <select id="ustatus" name="ustatus" class="form-select">
+                <option value="ongoing" selected>ONGOING</option>
+                <option value="upcoming">UPCOMING</option>
+                <option value="dropped">DROPPED</option>
+            </select>
+            @Html.ValidationMessageFor(model => model.ustatus, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.noc, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.noc, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter The Number Of Chapter" } })
+            @Html.ValidationMessageFor(model => model.noc, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.unoc, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.unoc, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter The Number Of Chapter for User" } })
+            @Html.ValidationMessageFor(model => model.unoc, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.pic, htmlAttributes: new { @class = "control-label mt-4" })
+            <input class="form-control" type="file" id="pic" name="pic">
+            @Html.ValidationMessageFor(model => model.pic, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.genre, htmlAttributes: new { @class = "form-label mt-4" })
+            @Html.EditorFor(model => model.genre, new { htmlAttributes = new { @class = "form-control", placeholder = "Enter The Anime Gener" } })
+            @Html.ValidationMessageFor(model => model.genre, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.author, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.author, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.author, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.releasedate, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.releasedate, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.releasedate, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.weblink, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.weblink, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.weblink, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.desc, htmlAttributes: new { @class = "control-label mt-4" })
+            <textarea class="form-control" id="desc" rows="10" name="desc"></textarea>
+            @Html.ValidationMessageFor(model => model.desc, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.rating, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.rating, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.rating, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.urating, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.urating, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.urating, "", new { @class = "text-danger" })
+        </div>
+        <div>
+            @Html.LabelFor(model => model.aname, htmlAttributes: new { @class = "control-label mt-4" })
+            @Html.EditorFor(model => model.aname, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.aname, "", new { @class = "text-danger" })
+        </div>
+        <button type="submit" value="Create" class="btn btn-primary">Submit</button>
+        <div>
+            @Html.ActionLink("Back to Manhwa", "Index", "Manhwa")
+        </div>
+    </fieldset>
+</form>

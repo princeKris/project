@@ -1,0 +1,53 @@
+﻿@model MANmanager.characterdata
+@{
+    ViewBag.Title = "Detials-Character";
+}
+
+
+<div class="card mb-3">
+    <h3 class="card-header">@Html.DisplayFor(model => model.name)</h3>
+    <div class="card-body">
+        <h5 class="card-title">Type</h5>
+        <h6 class="card-subtitle text-muted">@Html.DisplayFor(model => model.type)</h6>
+    </div>
+    @if (Model.pic != null)
+    {
+        <img src="~/Content/img/@Html.DisplayFor(model => model.pic)" width="100%" height="auto" style="max-height:475px;max-width:245px" />
+    }
+
+    <div class="card-body">
+        <p class="card-text">
+            Description : @Html.DisplayFor(model => model.bio)
+        </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Id : @Html.DisplayFor(model => model.Id)</li>
+        <li class="list-group-item">Plot : @Html.DisplayFor(model => model.plot)</li>
+    </ul>
+    <div class="card-body">
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "card-link" })
+        @Html.ActionLink("Back to Character", "Index", null, new { @class = "card-link" })
+
+    </div>
+    @if (ViewBag.animename != null)
+    {
+        <div class="card-footer text-muted">
+            Reference : @ViewBag.animename
+            @if (Model.type.ToString() == "anime")
+            {
+                @Html.ActionLink("Open Anime", "Detial", "Anime", new { id = ViewBag.animeid }, new { @class = "card-link" })
+            }
+            else if (Model.type.ToString() == "novel")
+            {
+                @Html.ActionLink("Open Novel", "Detial", "Novel", new { id = ViewBag.animeid }, new { @class = "card-link" })
+            }
+            else if (Model.type.ToString() == "manhwa")
+            {
+                @Html.ActionLink("Open Manhwa", "Detial", "Manhwa", new { id = ViewBag.animeid }, new { @class = "card-link" })
+            }
+
+        </div>
+    }
+
+</div>
+

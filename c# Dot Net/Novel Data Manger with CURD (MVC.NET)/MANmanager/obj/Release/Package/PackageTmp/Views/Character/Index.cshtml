@@ -1,0 +1,40 @@
+﻿@model IEnumerable<MANmanager.characterdata>
+@{
+    ViewBag.Title = "Character";
+}
+<br />
+<button type="button" class="btn btn-outline-primary">@Html.ActionLink("Create New", "Create")</button>
+<div class="containers">
+    @foreach (var item in Model)
+    {
+        <div class="movie-card">
+            @if (item.pic != null)
+            {
+                <div class="movie-header">
+                    <div class="header-icon-container">
+                        <img src="~/Content/img/@Html.DisplayFor(modelItem => item.pic)" width="100%" height="367px" />
+                    </div>
+                </div><!--movie-header-->
+            }
+
+            <div class="movie-content">
+                <div class="movie-content-header">
+                    <a href="#">
+                        <h3 class="movie-title">@Html.ActionLink(item.name.ToString(), "Detial", new { id = item.Id })</h3>
+                    </a>
+                </div>
+                <div class="movie-info">
+                    <div class="info-section">
+                        <button type="button" class="btn btn-info">@Html.ActionLink("Edit", "Edit", new { id = item.Id })</button>
+                    </div><!--seat-->
+                    <div class="info-section">
+                        <button type="button" class="btn btn-danger">@Html.ActionLink("Delete", "Delete", new { id = item.Id })</button>
+                    </div><!--seat-->
+                </div>
+            </div><!--movie-content-->
+        </div><!--movie-card-->
+
+    }
+</div>
+
+

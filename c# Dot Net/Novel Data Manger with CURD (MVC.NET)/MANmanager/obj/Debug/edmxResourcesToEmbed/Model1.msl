@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="manmanagermvcModelStoreContainer" CdmEntityContainer="manmanagermvcContext">
+    <EntitySetMapping Name="noveldatas">
+      <EntityTypeMapping TypeName="manmanagermvcModel.noveldata">
+        <MappingFragment StoreEntitySet="noveldata">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="ustatus" ColumnName="ustatus" />
+          <ScalarProperty Name="noc" ColumnName="noc" />
+          <ScalarProperty Name="unoc" ColumnName="unoc" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="authorname" ColumnName="authorname" />
+          <ScalarProperty Name="releasedate" ColumnName="releasedate" />
+          <ScalarProperty Name="weblink" ColumnName="weblink" />
+          <ScalarProperty Name="noveldes" ColumnName="noveldes" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="urating" ColumnName="urating" />
+          <ScalarProperty Name="aname" ColumnName="aname" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="animedatas">
+      <EntityTypeMapping TypeName="manmanagermvcModel.animedata">
+        <MappingFragment StoreEntitySet="animedata">
+          <ScalarProperty Name="urating" ColumnName="urating" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="aname" ColumnName="aname" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="weblink" ColumnName="weblink" />
+          <ScalarProperty Name="releasedate" ColumnName="releasedate" />
+          <ScalarProperty Name="studio" ColumnName="studio" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="uep" ColumnName="uep" />
+          <ScalarProperty Name="ep" ColumnName="ep" />
+          <ScalarProperty Name="ustatus" ColumnName="ustatus" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="manhwaid" ColumnName="manhwaid" />
+          <ScalarProperty Name="novelid" ColumnName="novelid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="manhwadatas">
+      <EntityTypeMapping TypeName="manmanagermvcModel.manhwadata">
+        <MappingFragment StoreEntitySet="manhwadata">
+          <ScalarProperty Name="urating" ColumnName="urating" />
+          <ScalarProperty Name="rating" ColumnName="rating" />
+          <ScalarProperty Name="aname" ColumnName="aname" />
+          <ScalarProperty Name="desc" ColumnName="desc" />
+          <ScalarProperty Name="weblink" ColumnName="weblink" />
+          <ScalarProperty Name="releasedate" ColumnName="releasedate" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="genre" ColumnName="genre" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="unoc" ColumnName="unoc" />
+          <ScalarProperty Name="noc" ColumnName="noc" />
+          <ScalarProperty Name="ustatus" ColumnName="ustatus" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="novelid" ColumnName="novelid" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="characterdatas">
+      <EntityTypeMapping TypeName="manmanagermvcModel.characterdata">
+        <MappingFragment StoreEntitySet="characterdata">
+          <ScalarProperty Name="typeid" ColumnName="typeid" />
+          <ScalarProperty Name="plot" ColumnName="plot" />
+          <ScalarProperty Name="bio" ColumnName="bio" />
+          <ScalarProperty Name="pic" ColumnName="pic" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

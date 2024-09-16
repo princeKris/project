@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="manmanagermvcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="noveldata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="String" MaxLength="150" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ustatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="noc" Type="Int32" Nullable="false" />
+    <Property Name="unoc" Type="Int32" />
+    <Property Name="pic" Type="String" MaxLength="300" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="genre" Type="String" MaxLength="350" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="authorname" Type="String" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="releasedate" Type="DateTime" Precision="0" />
+    <Property Name="weblink" Type="String" MaxLength="350" FixedLength="false" Unicode="false" />
+    <Property Name="noveldes" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="Int32" Nullable="false" />
+    <Property Name="urating" Type="Int32" />
+    <Property Name="aname" Type="String" MaxLength="650" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="manmanagermvcContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="noveldatas" EntityType="Self.noveldata" />
+    <EntitySet Name="animedatas" EntityType="manmanagermvcModel.animedata" />
+    <EntitySet Name="manhwadatas" EntityType="manmanagermvcModel.manhwadata" />
+    <EntitySet Name="characterdatas" EntityType="manmanagermvcModel.characterdata" />
+  </EntityContainer>
+  <EntityType Name="animedata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="novelid" Type="Int32" />
+    <Property Name="manhwaid" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ustatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ep" Type="Int32" />
+    <Property Name="uep" Type="Int32" />
+    <Property Name="pic" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="genre" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="studio" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="releasedate" Type="DateTime" Precision="0" />
+    <Property Name="weblink" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="aname" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="urating" Type="Int32" />
+  </EntityType>
+  <EntityType Name="manhwadata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="novelid" Type="Int32" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="false" />
+    <Property Name="status" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="ustatus" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="noc" Type="Int32" />
+    <Property Name="unoc" Type="Int32" />
+    <Property Name="pic" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="genre" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="author" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="releasedate" Type="DateTime" Precision="0" />
+    <Property Name="weblink" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="desc" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="aname" Type="String" MaxLength="400" FixedLength="false" Unicode="false" />
+    <Property Name="rating" Type="Int32" />
+    <Property Name="urating" Type="Int32" />
+  </EntityType>
+  <EntityType Name="characterdata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="name" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="pic" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="bio" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="plot" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="typeid" Type="Int32" />
+  </EntityType>
+</Schema>

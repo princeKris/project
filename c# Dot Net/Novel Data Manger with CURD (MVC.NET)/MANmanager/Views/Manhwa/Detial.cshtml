@@ -1,0 +1,51 @@
+﻿@model MANmanager.manhwadata
+
+@{
+    ViewBag.Title = "Detial-Manhwa";
+}
+
+
+<div class="card mb-3">
+    <h3 class="card-header">@Html.DisplayFor(model => model.name)</h3>
+    <div class="card-body">
+        <h5 class="card-title">Gener</h5>
+        <h6 class="card-subtitle text-muted">@Html.DisplayFor(model => model.genre)</h6>
+    </div>
+    <img src="~/Content/img/@Html.DisplayFor(model => model.pic)" width="100%" height="auto" style="max-height:475px;max-width:245px"/>
+    <div class="card-body">
+        <p class="card-text">
+            Description : @Html.DisplayFor(model => model.desc)
+        </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Id : @Html.DisplayFor(model => model.Id)</li>
+        <li class="list-group-item">Id : @Html.DisplayFor(model => model.novelid)</li>
+        <li class="list-group-item">Alternative Name : @Html.DisplayFor(model => model.aname)</li>
+        <li class="list-group-item">Status | UserStatus : @Html.DisplayFor(model => model.status) | @Html.DisplayFor(model => model.ustatus)</li>
+        <li class="list-group-item">Noc | Unoc : @Html.DisplayFor(model => model.noc) | @Html.DisplayFor(model => model.unoc)</li>
+        <li class="list-group-item">Rating | URating : @Html.DisplayFor(model => model.rating) | @Html.DisplayFor(model => model.urating)</li>
+        <li class="list-group-item">Author : @Html.DisplayFor(model => model.author)</li>
+        @if (ViewBag.cd != null)
+        {
+            <li class="list-group-item">
+                Character :
+
+                @foreach (var item in ViewBag.cd)
+                {
+                    <a href="/Character/Detial?id=@item.Id" class="card-link">@item.name</a>
+                }
+            </li>
+        }
+    </ul>
+    <div class="card-body">
+        <a href="@Html.DisplayFor(model=>model.weblink)" class="card-link">Web Link</a>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "card-link" })
+        <a href="/Manhwa/Index" class="card-link">Back to Manhwa</a>
+
+    </div>
+    <div class="card-footer text-muted">
+        Release Date : @Convert.ToDateTime(Model.releasedate).ToString("dd/MM/yyyy")
+    </div>
+</div>
+
+

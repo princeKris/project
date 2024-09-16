@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="manmanagermvcModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="animedata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="novelid" Type="int" />
+    <Property Name="manhwaid" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
+    <Property Name="ustatus" Type="varchar" MaxLength="20" />
+    <Property Name="ep" Type="int" />
+    <Property Name="uep" Type="int" />
+    <Property Name="pic" Type="varchar" MaxLength="200" />
+    <Property Name="genre" Type="varchar" MaxLength="400" />
+    <Property Name="studio" Type="varchar" MaxLength="100" />
+    <Property Name="releasedate" Type="date" />
+    <Property Name="weblink" Type="varchar" MaxLength="400" />
+    <Property Name="desc" Type="varchar(max)" />
+    <Property Name="aname" Type="varchar" MaxLength="400" />
+    <Property Name="rating" Type="int" />
+    <Property Name="urating" Type="int" />
+  </EntityType>
+  <EntityType Name="characterdata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="type" Type="varchar" MaxLength="10" />
+    <Property Name="name" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="pic" Type="varchar" MaxLength="500" />
+    <Property Name="bio" Type="varchar(max)" />
+    <Property Name="plot" Type="varchar(max)" />
+    <Property Name="typeid" Type="int" />
+  </EntityType>
+  <EntityType Name="manhwadata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="novelid" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="20" />
+    <Property Name="ustatus" Type="varchar" MaxLength="20" />
+    <Property Name="noc" Type="int" />
+    <Property Name="unoc" Type="int" />
+    <Property Name="pic" Type="varchar" MaxLength="200" />
+    <Property Name="genre" Type="varchar" MaxLength="400" />
+    <Property Name="author" Type="varchar" MaxLength="100" />
+    <Property Name="releasedate" Type="date" />
+    <Property Name="weblink" Type="varchar" MaxLength="400" />
+    <Property Name="desc" Type="varchar(max)" />
+    <Property Name="aname" Type="varchar" MaxLength="400" />
+    <Property Name="rating" Type="int" />
+    <Property Name="urating" Type="int" />
+  </EntityType>
+  <EntityType Name="noveldata">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="150" Nullable="false" />
+    <Property Name="status" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="ustatus" Type="varchar" MaxLength="20" />
+    <Property Name="noc" Type="int" Nullable="false" />
+    <Property Name="unoc" Type="int" />
+    <Property Name="pic" Type="varchar" MaxLength="300" Nullable="false" />
+    <Property Name="genre" Type="varchar" MaxLength="350" Nullable="false" />
+    <Property Name="authorname" Type="varchar" MaxLength="150" />
+    <Property Name="releasedate" Type="date" />
+    <Property Name="weblink" Type="varchar" MaxLength="350" />
+    <Property Name="noveldes" Type="varchar(max)" />
+    <Property Name="rating" Type="int" Nullable="false" />
+    <Property Name="urating" Type="int" />
+    <Property Name="aname" Type="varchar" MaxLength="650" />
+  </EntityType>
+  <EntityContainer Name="manmanagermvcModelStoreContainer">
+    <EntitySet Name="animedata" EntityType="Self.animedata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="characterdata" EntityType="Self.characterdata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="manhwadata" EntityType="Self.manhwadata" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="noveldata" EntityType="Self.noveldata" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
